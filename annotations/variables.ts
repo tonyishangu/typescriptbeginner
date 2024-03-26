@@ -42,3 +42,10 @@ for( i = 0; i < words.length; i++){
     foundWord = true
   }
 }
+    //Variables whose type cannot be inferred correctly, when a type can be any type depending on the conditions
+let nums = [-10, -1, 12]
+let numsAbovezero: boolean | number = false
+for (let i = 0; i<nums.length; i++) {
+  if(nums[i] > 0){
+    numsAboveZero = nums[i]
+}
