@@ -27,3 +27,9 @@ let point: { x: number; y:number} = {
 const logNumber: {i: number} => void = (i: number) => {
   console.log(i)
 }
+
+// when to use annotations
+// function that returns 'any' type
+const json = '{'x': 10, 'y': 20}'
+const  coord: {x: number, y: number} = JSON.parse(json)   //results ==> {x: 10, y:20}
+//JSON.parse() ==> function that takes a json string and converts in into a javascript object.
