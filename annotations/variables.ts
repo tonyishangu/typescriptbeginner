@@ -29,7 +29,16 @@ const logNumber: {i: number} => void = (i: number) => {
 }
 
 // when to use annotations
-// function that returns 'any' type
+    //1. function that returns 'any' type
 const json = '{'x': 10, 'y': 20}'
 const  coord: {x: number, y: number} = JSON.parse(json)   //results ==> {x: 10, y:20}
 //JSON.parse() ==> function that takes a json string and converts in into a javascript object.
+
+    //2. When we declare a variable on one line and utilize it later
+let words = ['red', 'blue', 'green']
+let foundWord: boolean
+for( i = 0; i < words.length; i++){
+  if(words[i] === 'green'){
+    foundWord = true
+  }
+}
