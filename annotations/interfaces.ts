@@ -1,7 +1,11 @@
-interface Vehicle {
-  name: string
-  year: number
-  broken: boolean
+// interface Vehicle {
+//   name: string
+//   year: number
+//   broken: boolean
+//   summary(): string
+// }
+
+interface Reportables {
   summary(): string
 }
 
@@ -21,3 +25,8 @@ const printVehicle = (vehicle: Vehicle): void => {
   console.log(vehicle.summary())
 }
 
+const printSummary = (item: Reportables): void => {
+  console.log(item.summary)
+}
+
+printSummary(oldCivic)
